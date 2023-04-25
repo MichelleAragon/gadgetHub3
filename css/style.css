@@ -4,7 +4,7 @@
 
 .nav-item {
   font-size: 14px;
-  font-family: "Roboto";
+  font-family: "Roboto", "Open Sans";
 }
 
 .searchInput {
@@ -28,9 +28,62 @@
 
 .carousel-caption {
   font-size: 24px;
-  font-family: "Roboto";
+  font-family: "Roboto", "Open Sans";
   font-weight: 500;
   color: #FFFFFF;
+}
+
+.asideWhatsapp {
+  height: 100px;
+  width: 100vw;
+}
+.asideWhatsapp .bottonWhatsapp {
+  position: fixed;
+  right: 4%;
+  bottom: 10%;
+}
+.asideWhatsapp .bottonWhatsapp img {
+  height: 60px;
+  width: 60px;
+  border-radius: 30%;
+  box-shadow: 1px 1px 1px 1px #F54895;
+}
+
+.section-whyGH {
+  display: grid;
+  height: 65vh;
+  width: 100vw;
+  grid-template-columns: repeat(2, 1fr);
+  background-color: #e5e5e5;
+  color: #000000;
+  row-gap: 10px;
+  column-gap: 10px;
+  font-family: "Roboto", "Open Sans";
+  margin-top: 30px;
+}
+.section-whyGH .banner-div1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  line-height: 50px;
+}
+.section-whyGH .banner-div1 .banner-div-h2 {
+  font-weight: 500;
+  margin-bottom: 40px;
+  font-size: 70px;
+  background: -webkit-linear-gradient(left top, #F54895, #5BE0E6);
+  background: linear-gradient(to bottom right, #5BE0E6, #F54895);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.section-whyGH .banner-div1 .banner-div-pInformation {
+  color: #F54895;
+}
+.section-whyGH .banner-div2 {
+  background-image: url("../img/auriculares-razer-nari-ultimate-11-removebg-preview.png");
+  background-repeat: no-repeat;
+  overflow: hidden;
 }
 
 /*# sourceMappingURL=style.css.map */

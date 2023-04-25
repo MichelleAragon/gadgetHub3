@@ -4,7 +4,7 @@
 
 .nav-item {
   font-size: $font-sm;
-  font-family: 'Roboto';
+  font-family: $font-family-principal, $font-family-secundary;
 }
 
 .searchInput {

@@ -12,7 +12,7 @@
 
 .carousel-caption {
     font-size: $font-lg;
-    font-family: 'Roboto';
+    font-family: $font-family-principal, $font-family-secundary;
     font-weight: 500;
     color: $color-white;
 }

@@ -1,0 +1,57 @@
+// Centrar con colum
+@mixin flex-column-center-center {
+       display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+}
+
+// // Centrar con row
+// @mixin flex-row-center {
+// 	display: flex;
+// 	flex-direction: row;
+// 	justify-content: center;
+// }
+
+
+.section-whyGH {
+    
+    display: grid;
+    height: 65vh;
+    width: 100vw;
+    grid-template-columns: repeat(2, 1fr);
+    background-color: #e5e5e5;
+    color: $color-black;
+    row-gap: 10px;
+    column-gap: 10px;
+    font-family: $font-family-principal, $font-family-secundary;
+    margin-top: 30px;
+
+
+    .banner-div1 {
+        @include flex-column-center-center;
+        line-height: 50px;
+
+        .banner-div-h2 {
+            font-weight: 500;
+            margin-bottom: 40px;
+            font-size: 70px;  
+            background: -webkit-linear-gradient(left top, #F54895, #5BE0E6);
+            background: linear-gradient(to bottom right, #5BE0E6,#F54895 );
+            -webkit-background-clip: text;  
+            -webkit-text-fill-color: transparent;  
+            }  
+        
+
+        .banner-div-pInformation {
+            color: $color-pink;
+        }
+    }
+
+    .banner-div2 {
+        background-image: url('../img/auriculares-razer-nari-ultimate-11-removebg-preview.png');
+        background-repeat: no-repeat;
+        overflow: hidden;
+    }
+
+}
