@@ -1,0 +1,18 @@
+.carouselExampleCaptions {
+    height: 100vh;
+}
+
+.carousel-item {
+    height: 100vh; 
+     img {
+        height: 100%;
+        object-fit: cover;
+    }
+}
+
+.carousel-caption {
+    font-size: $font-lg;
+    font-family: 'Roboto';
+    font-weight: 500;
+    color: $color-white;
+}

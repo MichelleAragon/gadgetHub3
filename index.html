@@ -1,12 +1,215 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home - Gadget Hub</title>
+    <title>HOME - Gadget Hub</title>
+    <!-- ETIQUETAS META SEO -->
+    <meta name="description" content="Encuentra equipos tecnologicos que cubran tus necesidades">
+    <meta name="keywords"
+        content="celulares, computadoras, auriculares, pc, ordenadores, laptops, notebook, accesorios">
+    <!-- FONT AWESOME -->
+    <script src="https://kit.fontawesome.com/840d3e83f7.js" crossorigin="anonymous"></script>
+    <!-- GOOGLE FONT -->
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;1,100&display=swap');
+    </style>
+    <!-- AOS CSS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- LINK BOOSTRAP -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <!-- LINK CSS -->
+    <link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
+
 <body>
-    
+    <main>
+        <!-- NAVBAR -->
+        <header class="navbar navbar-expand-lg fixed-top" data-bs-theme="dark">
+            <nav class="container-fluid">
+                <img src="img/Logo-GH-bg-transparent.png" alt="Logo GH" width="50" height="50">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse flex-grow-0" id="navbarTogglerDemo02">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item me-5">
+                            <a class="nav-link active" aria-current="page" href="#">HOME</a>
+                        </li>
+                        <li class="nav-item me-5">
+                            <a class="nav-link active" aria-current="page" href="pc.html">PC</a>
+                        </li>
+                        <li class="nav-item me-5">
+                            <a class="nav-link active" aria-current="page" href="console.html">CONSOLE</a>
+                        </li>
+                        <li class="nav-item me-5">
+                            <a class="nav-link active" aria-current="page" href="mobile.html">MOBILE</a>
+                        </li>
+                        <li class="nav-item me-5">
+                            <a class="nav-link active" aria-current="page" href="accesories.html">ACCESORIES</a>
+                        </li>
+                    </ul>
+                    <form class="d-flex" role="search">
+                        <input class="form-control me-2 searchInput" type="search" placeholder="Search"
+                            aria-label="Search">
+                        <button class="btn btn-light" type="submit">Search</button>
+                    </form>
+                </div>
+            </nav>
+        </header>
+
+        <!-- CAROUSEL -->
+        <section id="carouselExampleCaptions" class="carousel slide carousel-container">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                    aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="img/image-header.png" class="d-block w-100 carousel-item-img" alt="notebook image">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>RAZER DESKTOP</h5>
+                        <p>YOU DESERVE IT</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="img/playstation (1).jpg" class="d-block w-100 carousel-item-img" alt="notebook image">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>PLAYSTATION 5</h5>
+                        <p>POWERFUL. PERFECTION.</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="img/iphone2.png" class="d-block w-100 carousel-item-img" alt="notebook image">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>NEW IPHONE</h5>
+                        <p>PORTABLE. POWERFUL. PERFECTION.</p>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </section>
+
+        <!-- CARDS -->
+        <section class=" mt-5 mb-5 row justify-content-center gap-3" data-aos="fade-up">
+            <div class="card card border-0 px-3 col-lg-4 col-md-6 col-sm-12">
+                <img src="img/pc.jpeg" class="card-img-top group-card-img" alt="PC image">
+                <div class="card-body">
+                    <p class="card-text">All you need in a computer</p>
+                    <a href="#" class="btn btn-dark">Buy</a>
+                </div>
+            </div>
+            <div class="card card border-0 px-3 col-lg-4 col-md-6 col-sm-12">
+                <img src="img/razer-new.jpeg" class="card-img-top group-card-img" alt="notebook image">
+                <div class="card-body">
+                    <p class="card-text">All you need in a notebook</p>
+                    <a href="#" class="btn btn-dark">Buy</a>
+                </div>
+            </div>
+            <div class="card card border-0 px-3 col-lg-4 col-md-6 col-sm-12">
+                <img src="img/iphone.png" class="card-img-top group-card-img" alt="iphone image">
+                <div class="card-body">
+                    <p class="card-text">Stay connected anywhere</p>
+                    <a href="#" class="btn btn-dark"">Buy</a>
+                </div>
+              </div>
+              <div class=" card card border-0 px-3 col-lg-4 col-md-6 col-sm-12">
+                        <img src="img/airpods.png" class="card-img-top group-card-img" alt="airpods image">
+                        <div class="card-body">
+                            <p class="card-text">Listen anything in privacy</p>
+                            <a href="#" class="btn btn-dark">Buy</a>
+                        </div>
+                </div>
+        </section>
+
+        <!-- CONTACT FORM -->
+        <form class=" row g-3 needs-validation bg-light justify-content-center text-align-center px-5" novalidate data-aos="fade-up">
+            <div class="col-md-12">
+                <label for="validationCustom01" class="form-label">First name</label>
+                <input type="text" class="form-control" id="validationCustom01" placeholder="Michelle" required>
+                <div class="valid-feedback">
+                    Looks good!
+                </div>
+            </div>
+            <div class="col-md-12">
+                <label for="validationCustom02" class="form-label">Last name</label>
+                <input type="text" class="form-control" id="validationCustom02" placeholder="Aragon" required>
+                <div class="valid-feedback">
+                    Looks good!
+                </div>
+            </div>
+            <div class="col-md-12">
+                <label for="validationCustomUsername" class="form-label">Username</label>
+                <div class="input-group has-validation">
+                    <span class="input-group-text" id="inputGroupPrepend">@</span>
+                    <input type="text" class="form-control" id="validationCustomUsername"
+                        aria-describedby="inputGroupPrepend" required>
+                    <div class="invalid-feedback">
+                        Please choose a username.
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-12 mb-5">
+                <button class="btn text-white" style="background-color: #f54895;" type="submit">Submit form</button>
+            </div>
+        </form>
+
+        <aside class="asideWhatsapp">
+            <botton class="bottonWhatsapp">
+                <a href="https://www.whatsapp.com/" target="_blank">
+                    <img src="img/logo_de_whatsapp-removebg-preview.png" class="imgLogoWhatsapp" />
+                </a>
+            </botton>
+        </aside>
+
+
+        <footer class="d-flex justify-content-center">
+            <article class="mt-4 mb-4">
+                <div class=" d-flex justify-content-evenly mb-2">
+                    <a href="https://www.linkedin.com/" target="_blank">
+                        <i class="fa-brands fa-linkedin fa-2xl" style="color: #000000;"></i>
+                    </a>
+
+                    <a href="https://www.instagram.com/" target="_blank">
+                        <i class="fa-brands fa-instagram fa-2xl" style="color: #000000;"></i>
+                    </a>
+
+                    <a href="https://www.facebook.com/" target="_blank">
+                        <i class="fa-brands fa-square-facebook fa-2xl" style="color: #000000;"></i>
+                    </a>
+                </div>
+                <div>Copyright © 2023 Gadget Hub C.A All rights reserved.</div>
+            </article>
+        </footer>
+
+    </main>
+    <!-- JS BOOSTRAP -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+        crossorigin="anonymous"></script>
+        <!-- JS AOS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+      </script>
 </body>
+
 </html>

@@ -1,0 +1,15 @@
+.navbar {
+  background-color: $color-black;
+}
+
+.nav-item {
+  font-size: $font-sm;
+  font-family: 'Roboto';
+}
+
+.searchInput {
+  background-color: $color-transparent;
+  &:focus {
+    color: $color-white;
+  }
+}
