@@ -51,7 +51,8 @@
 
 .section-whyGH {
   display: grid;
-  height: 65vh;
+  height: auto;
+  position: relative;
   width: 100vw;
   grid-template-columns: repeat(2, 1fr);
   background-color: #e5e5e5;
@@ -60,6 +61,7 @@
   column-gap: 10px;
   font-family: "Roboto", "Open Sans";
   margin-top: 30px;
+  flex-wrap: wrap;
 }
 .section-whyGH .banner-div1 {
   display: flex;
@@ -72,8 +74,8 @@
   font-weight: 500;
   margin-bottom: 40px;
   font-size: 70px;
-  background: -webkit-linear-gradient(left top, #F54895, #5BE0E6);
-  background: linear-gradient(to bottom right, #5BE0E6, #F54895);
+  background: -webkit-linear-gradient(left top, #f54895, #5be0e6);
+  background: linear-gradient(to bottom right, #5be0e6, #f54895);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -84,6 +86,109 @@
   background-image: url("../img/auriculares-razer-nari-ultimate-11-removebg-preview.png");
   background-repeat: no-repeat;
   overflow: hidden;
+  height: 500px;
+}
+
+@media only screen and (max-width: 768px) {
+  .section-whyGH {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+footer {
+  padding-top: 20px;
+  position: sticky;
+}
+
+.footer-div-copyright {
+  font-size: 14px;
+  font-family: "Roboto", "Open Sans";
+}
+
+.section__hero {
+  display: grid;
+  grid-template-columns: 1, 1fr;
+  grid-template-rows: 2, 1fr;
+  height: 100vh;
+}
+.section__hero .article__hero--size {
+  height: 70vh;
+}
+.section__hero .article__hero--size .article__heroImg--size {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  object-position: bottom;
+}
+.section__hero .article__heroContent {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  height: 30vh;
+}
+.section__hero .article__heroContent .article__heroContent--h2 {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font-size: 40px;
+  background: -webkit-linear-gradient(left top, #f54895, #5be0e6);
+  background: linear-gradient(to bottom right, #5be0e6, #f54895);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.section__hero .article__heroContent .article__heroContent__div {
+  font-family: "Roboto", "Open Sans";
+}
+.section__hero .article__heroContent .article__heroContent__div h4 {
+  font-size: 18px;
+}
+.section__hero .article__heroContent .article__heroContent__div p {
+  font-size: 14px;
+}
+.section__hero .article__heroContent .article__heroContent__div .hero-div-pInformation {
+  color: #F54895;
+}
+
+.section__groupCard {
+  background-color: #e5e5e5;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.card__div--h2 {
+  font-family: "Roboto", "Open Sans";
+  font-size: 24px;
+  font-weight: 500;
+  color: #FFFFFF;
+}
+
+.section__quadrate {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  background-color: #F9F9F9;
+  margin-bottom: 20px;
+}
+.section__quadrate article {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+.section__quadrate article img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.section__quadrate article h2 {
+  font-size: 24px;
+  font-family: "Roboto", "Open Sans";
+  font-weight: bold;
+}
+
+@media only screen and (max-width: 768px) {
+  .section__quadrate {
+    grid-template-columns: repeat(1, 1fr);
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

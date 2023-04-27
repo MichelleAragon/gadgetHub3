@@ -1,0 +1,34 @@
+// Variable vista mobile
+$vista: mobile;
+
+.section__quadrate {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    // height: 100vh;
+    background-color: #F9F9F9;
+    margin-bottom: 20px;
+
+    article {
+        @include flex-column-center-center;
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        h2 {
+            font-size: $font-lg;
+            font-family: $font-family-principal, $font-family-secundary;
+            font-weight: bold;
+        }
+    }
+}
+
+@if $vista == mobile {
+    @media only screen and (max-width: 768px) {
+        .section__quadrate {
+        grid-template-columns: repeat(1, 1fr);
+      }
+    }
+  }

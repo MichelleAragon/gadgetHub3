@@ -1,0 +1,42 @@
+.section__hero {
+  display: grid;
+  grid-template-columns: 1, 1fr;
+  grid-template-rows: 2, 1fr;
+  height: 100vh;
+
+  .article__hero--size {
+    height: 70vh;
+    .article__heroImg--size {
+      height: 100%;
+      width: 100%;
+      object-fit: cover;
+      object-position: bottom;
+    }
+  }
+
+  .article__heroContent {
+    @include flex-column-center-center;
+    height: 30vh;
+    .article__heroContent--h2 {
+        margin-top: 20px;
+      margin-bottom: 20px;
+      font-size: 40px;
+      background: -webkit-linear-gradient(left top, #f54895, #5be0e6);
+      background: linear-gradient(to bottom right, #5be0e6, #f54895);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+    .article__heroContent__div {
+        font-family: $font-family-principal, $font-family-secundary;
+        h4 {
+            font-size: $font-md;
+        }
+        p {
+            font-size: $font-sm;
+        }
+        .hero-div-pInformation {
+            color: $color-pink;
+        }
+    }
+  }
+}
