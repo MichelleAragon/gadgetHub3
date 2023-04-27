@@ -185,10 +185,4 @@ footer {
   font-weight: bold;
 }
 
-@media only screen and (max-width: 768px) {
-  .section__quadrate {
-    grid-template-columns: repeat(1, 1fr);
-  }
-}
-
 /*# sourceMappingURL=style.css.map */
